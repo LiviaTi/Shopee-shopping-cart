@@ -2,5 +2,12 @@
 
 //create item with correct subtotal
 async function createItem(nameItem, priceItem, quantityItem) {
-	
+	return {
+		nameItem,
+		priceItem,
+		quantityItem,
+		subTotalItem: () => priceItem * quantityItem,
+	}
 }
+
+export default createItem;

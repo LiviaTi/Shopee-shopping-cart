@@ -20,13 +20,12 @@ async function removeItemCart(userCart, item) {
 		return;
 	}
 	//case found, if item > 1 subtract 1 item, item = 1 delete item
-	if (userCart[indexFound].quantityItem == 1) {
-		userCart.splice(indexFound, 1);
-		return;
-	}
 	if (userCart[indexFound].quantityItem > 1) {
 		userCart[indexFound].quantityItem--;
 		return;
+	}else {
+		userCart.splice(indexFound, 1);
+		console.log(`${item.nameItem} removido do carrinho`);
 	}
 
 }

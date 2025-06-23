@@ -6,7 +6,9 @@ async function createItem(nameItem, priceItem, quantityItem) {
 		nameItem,
 		priceItem,
 		quantityItem,
-		subTotalItem: () => priceItem * quantityItem,
+		subTotalItem: function () {
+			return this.priceItem * this.quantityItem;
+		}
 	}
 }
 

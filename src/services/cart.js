@@ -20,9 +20,17 @@ async function sumTotalCart(userCart) {
 	console.log(resultSumTotalCart);
 }
 
+async function viewItemCart(userCart) {
+	console.log("Shopee cart list: ");
+	userCart.forEach((item, index) => {
+		console.log(`${index + 1}. ${item.nameItem} - R$${item.priceItem} | ${item.quantityItem} | Subtotal: ${item.subTotalItem()}`);
+	});
+}
+
 export {
 	addItemCart,
 	sumTotalCart,
 	deleteItemCart,
 	removeItemCart,
+	viewItemCart,
 }

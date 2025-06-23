@@ -1,7 +1,7 @@
 
 <h1>Recreating Shopee's Shopping Cart Logic</h1>
 <p align="center">
-  <img src="./img/arquitetura.png" alt="Descrição da Imagem" width="300"/>
+  <img src="./img/arquitetura.png" alt="Descrição da Imagem" width="650"/>
 </p>
 
 <br/>

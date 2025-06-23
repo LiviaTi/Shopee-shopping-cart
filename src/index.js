@@ -17,7 +17,8 @@ await cartService.addItemCart(myWhishList, item2);
 //await cartService.deleteItemCart(myCart, item2.nameItem);
 //console.log(item1.subTotalItem());
 
-//console.log("Total Shopee cart:");
-//await cartService.sumTotalCart(myCart);
+await cartService.removeItemCart(myCart, item1);
 
 await cartService.viewItemCart(myCart);
+
+await cartService.sumTotalCart(myCart);

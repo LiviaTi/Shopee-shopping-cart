@@ -4,7 +4,11 @@ async function addItemCart(userCart, itemName) {
 }
 
 async function deleteItemCart(userCart, nameItem) {
-	
+	const index = userCart.findIndex((item) => item.nameItem === nameItem);
+
+	if (index != -1) {
+		userCart.splice(index, 1);
+	}
 }
 
 async function removeItemCart(userCart, index) {
